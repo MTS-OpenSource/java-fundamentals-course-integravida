@@ -151,7 +151,7 @@ Universidad Peruana de Ciencias Aplicadas
 Carrera de Ingeniería de Software  
 Período 202610  
 1ASI0729 Desarrollo de Aplicaciones Open Source  
-NRC [Número de NRC]
+NRC 11913
 
 **Nombre del equipo**: IntegraVida  
 **Líder del equipo**: Jean Pool Alexander Arias Tasayco  
@@ -162,4 +162,4 @@ NRC [Número de NRC]
 - Javier Oswaldo Tello Murga (U202218387)
 - Jose Antonio Muñoz Amasifuen (U20231D385)
 
-**Fecha de entrega**: [Fecha]
+**Fecha de entrega**: Semana 12
