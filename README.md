@@ -99,13 +99,19 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Descubre el corazón de Java: crea tus propias clases,
   instancia objetos y usa encapsulación con getters y setters.
+  En esta lección usamos como ejemplo real el **Perfil de Usuario** de GlucoSmart,
+  nuestra aplicación de monitoreo de salud, para que veas cómo la POO
+  se aplica en un proyecto real de software.
 - **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK6)
 - **Conclusiones clave**:
-  - Una clase es el molde; un objeto es el resultado.
-  - Constructor: `public Estudiante(String nombre, int edad) { ... }`
-  - Encapsulación: atributos `private`, acceso con `getNombre()` / `setNombre()`
+  - Una clase es el molde; un objeto es el resultado: `Profile perfil = new Profile(...)`
+  - Los atributos deben ser `private` para proteger los datos (encapsulación).
+  - El constructor inicializa el objeto: `public Profile(int id, PersonName name, ...)`
+  - Los getters permiten leer atributos: `perfil.getName().getFullName()`
+  - Los setters permiten modificar atributos: `perfil.setPhoneNumber("+51 999...")`
+  - Un Value Object como `EmailAddress` puede incluir validaciones en su constructor.
 - **Practica aquí**:
-  [Abrir editor — Clases y Objetos](https://jdoodle.com/execute-java-online/?LINK6)
+  [Abrir editor — Clases y Objetos](https://jdoodle.com/iide/embed/lesson-06-profile)
   👈 **¡Sin registro!**
 
 ---
@@ -140,7 +146,7 @@ Solo necesitas tu navegador web.
 | 3 | Operadores | [JDoodle](https://jdoodle.com/execute-java-online/?LINK3) |
 | 4 | Estructuras de Control | [JDoodle](https://jdoodle.com/execute-java-online/?LINK4) |
 | 5 | Métodos y Scanner | [JDoodle](https://jdoodle.com/execute-java-online/?LINK5) |
-| 6 | Clases y Objetos | [JDoodle](https://jdoodle.com/execute-java-online/?LINK6) |
+| 6 | Clases y Objetos | [JDoodle](https://jdoodle.com/iide/embed/lesson-06-profile) |
 | 7 | Proyecto Final | [JDoodle](https://jdoodle.com/execute-java-online/?LINK7) |
 
 ---
