@@ -29,7 +29,7 @@ Solo necesitas tu navegador web.
   - Java se usa en aplicaciones, videojuegos y sistemas empresariales.
   - Todo empieza con `System.out.println("Hola, mundo!");`
 - **Empieza a practicar**:
-  [Abrir editor — Hola Mundo](https://jdoodle.com/execute-java-online/?LINK1)
+  [Abrir editor — Hola Mundo](https://www.jdoodle.com/ia/1U7V)
   👈 **¡Sin registro!**
 
 ---
@@ -45,7 +45,7 @@ Solo necesitas tu navegador web.
   - `double altura = 1.65;` guarda decimales.
   - `boolean activo = true;` guarda verdadero/falso.
 - **Practica aquí**:
-  [Abrir editor — Variables](https://jdoodle.com/execute-java-online/?LINK2)
+  [Abrir editor — Variables](https://www.jdoodle.com/ia/1U7W)
   👈 **¡Sin registro!**
 
 ---
@@ -60,7 +60,7 @@ Solo necesitas tu navegador web.
   - Operadores de comparación: `==`, `!=`, `>`, `<`
   - Operadores lógicos: `&&`, `||`, `!`
 - **Practica aquí**:
-  [Abrir editor — Operadores](https://jdoodle.com/execute-java-online/?LINK3)
+  [Abrir editor — Operadores](https://www.jdoodle.com/ia/1U7X)
   👈 **¡Sin registro!**
 
 ---
