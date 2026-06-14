@@ -23,7 +23,7 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Descubre qué es la programación, qué es Java y por qué
   es un excelente lenguaje para empezar a programar.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK1)
+- **Enlace**: [Ver lección](https://youtu.be/7y3d8JpAxpc)
 - **Conclusiones clave**:
   - Un programa es una lista de instrucciones para la computadora.
   - Java se usa en aplicaciones, videojuegos y sistemas empresariales.
@@ -38,7 +38,7 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Aprende a guardar información en tu programa usando
   variables y conoce los tipos de datos más comunes en Java.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK2)
+- **Enlace**: [Ver lección](https://youtu.be/ZLkfgIwA8iM)
 - **Conclusiones clave**:
   - `int edad = 15;` guarda números enteros.
   - `String nombre = "Ana";` guarda texto.
