@@ -54,7 +54,7 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Aprende a hacer cálculos y comparaciones dentro de
   tu programa.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK3)
+- **Enlace**: [Ver lección](https://youtu.be/V1c4a62HAqQ)
 - **Conclusiones clave**:
   - Operadores aritméticos: `+`, `-`, `*`, `/`, `%`
   - Operadores de comparación: `==`, `!=`, `>`, `<`
