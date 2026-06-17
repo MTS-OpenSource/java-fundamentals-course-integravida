@@ -1,59 +1,54 @@
-// =============================================================
-//  Lección 6 — Introducción a POO: Clases y Objetos
-//  Archivo de práctica — completa los TODO
-// =============================================================
-
-// TODO 1: Crea una clase llamada PersonName con:
-//   - Atributos privados: firstName (String) y lastName (String)
-//   - Un constructor que reciba ambos valores
-//   - Un método getFullName() que devuelva firstName + " " + lastName
-//   - Getters para firstName y lastName
+// TODO 1: Define una clase llamada Paciente (encima del main, fuera de ClasesYObjetos)
+// La clase debe tener 3 atributos private:
+//   - nombre (String)
+//   - edad (int)
+//   - nivelGlucosa (double)
+//
+// Pista: así se ve un atributo privado:
+//   private String nombre;
 
 
-// TODO 2: Crea una clase llamada EmailAddress con:
-//   - Un atributo privado: value (String)
-//   - Un constructor que valide que value contenga "@"
-//     Si no contiene "@", lanza: throw new IllegalArgumentException("Email inválido")
-//   - Un getter getValue()
-//   - Sobreescribe toString() para que devuelva value
+// TODO 2: Dentro de la clase Paciente, crea un constructor que reciba
+//         los 3 atributos como parámetros y los asigne con "this."
+//
+// Pista:
+//   public Paciente(String nombre, int edad, double nivelGlucosa) {
+//       this.nombre = nombre;
+//       ...
+//   }
 
 
-// TODO 3: Crea una clase llamada Profile con:
-//   - Atributos privados: id (int), name (PersonName),
-//     email (EmailAddress), phoneNumber (String), dateOfBirth (String)
-//   - Un constructor que reciba los 5 parámetros
-//   - Getters para todos los atributos
-//   - Un setter para phoneNumber
-//   - Un método updateName(String firstName, String lastName)
-//     que cree un nuevo PersonName y lo asigne a name
-//   - Un método printSummary() que imprima todos los datos con System.out.println
+// TODO 3: Dentro de la clase Paciente, agrega getters para los 3 atributos
+//
+// Pista:
+//   public String getNombre() { return nombre; }
 
 
-// TODO 4: En el main, completa el siguiente código:
+// TODO 4: Dentro de la clase Paciente, agrega un setter solo para nivelGlucosa
+//
+// Pista:
+//   public void setNivelGlucosa(double nuevoNivel) { nivelGlucosa = nuevoNivel; }
+
+
+// TODO 5: Dentro de la clase Paciente, crea un método mostrarInfo()
+//         que imprima nombre, edad y nivelGlucosa con System.out.println
+
+
 public class ClasesYObjetos {
 
     public static void main(String[] args) {
 
-        // Crea un PersonName con tu nombre y apellido
-        PersonName nombre = // TODO
+        // TODO 6: Crea dos objetos Paciente usando "new" y el constructor
+        // Ejemplo: Paciente paciente1 = new Paciente("Ana García", 45, 95.5);
 
-        // Crea un EmailAddress con tu email
-        EmailAddress email = // TODO
 
-        // Crea un Profile con id=1, el nombre, email, un teléfono y tu fecha de nacimiento
-        Profile perfil = // TODO
+        // TODO 7: Llama a mostrarInfo() en cada objeto
 
-        // Llama a printSummary() para mostrar el perfil
-        // TODO
 
-        // Actualiza el teléfono con setPhoneNumber()
-        // TODO
+        // TODO 8: Usa un getter para imprimir el nombre del primer paciente
 
-        // Llama a printSummary() de nuevo para ver el cambio
-        // TODO
 
-        // BONUS: Intenta crear un EmailAddress con un valor sin "@"
-        // y captura la excepción con try-catch
-        // TODO
+        // TODO 9: Usa el setter para cambiar el nivelGlucosa del primer paciente
+        //         y luego imprímelo con un getter para verificar el cambio
     }
 }

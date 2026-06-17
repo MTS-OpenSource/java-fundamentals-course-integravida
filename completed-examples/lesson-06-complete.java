@@ -1,136 +1,58 @@
-// =============================================================
-//  Lección 6 — Introducción a POO: Clases y Objetos
-//  Proyecto: GlucoSmart (IntegraVida)
-//  Ejemplo completo con: clase, atributos, constructor,
-//  getters/setters, encapsulación y método personalizado.
-// =============================================================
+// Una clase es el "molde" para crear objetos.
+// Aquí definimos la clase Paciente FUERA del main (arriba de él).
+class Paciente {
 
-// ── Value Object: PersonName ──────────────────────────────────
-// Un Value Object representa un concepto simple del dominio.
-// No tiene identidad propia; su igualdad se basa en su valor.
-class PersonName {
-    private String firstName;
-    private String lastName;
+    // Atributos: datos que tendrá cada paciente
+    // "private" significa que solo se pueden cambiar desde dentro de la clase
+    private String nombre;
+    private int edad;
+    private double nivelGlucosa;
 
-    public PersonName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    // Constructor: se ejecuta cuando creamos un objeto con "new"
+    public Paciente(String nombre, int edad, double nivelGlucosa) {
+        this.nombre       = nombre;
+        this.edad         = edad;
+        this.nivelGlucosa = nivelGlucosa;
     }
 
-    public String getFullName() {
-        return firstName + " " + lastName;
+    // Getters: métodos para leer los atributos desde afuera
+    public String getNombre()       { return nombre; }
+    public int    getEdad()         { return edad; }
+    public double getNivelGlucosa() { return nivelGlucosa; }
+
+    // Setter: método para modificar un atributo desde afuera
+    public void setNivelGlucosa(double nuevoNivel) {
+        nivelGlucosa = nuevoNivel;
     }
 
-    public String getFirstName() { return firstName; }
-    public String getLastName()  { return lastName;  }
-}
-
-// ── Value Object: EmailAddress ────────────────────────────────
-class EmailAddress {
-    private String value;
-
-    public EmailAddress(String value) {
-        if (!value.contains("@")) {
-            throw new IllegalArgumentException("Email inválido: " + value);
-        }
-        this.value = value;
-    }
-
-    public String getValue() { return value; }
-
-    @Override
-    public String toString() { return value; }
-}
-
-// ── Aggregate: Profile ────────────────────────────────────────
-// El Aggregate es la clase principal del bounded context.
-// Encapsula su estado y expone comportamiento a través de métodos.
-class Profile {
-
-    // Atributos privados — encapsulación
-    private int id;
-    private PersonName name;
-    private EmailAddress email;
-    private String phoneNumber;
-    private String dateOfBirth;   // formato: YYYY-MM-DD
-
-    // Constructor
-    public Profile(int id, PersonName name, EmailAddress email,
-                   String phoneNumber, String dateOfBirth) {
-        this.id          = id;
-        this.name        = name;
-        this.email       = email;
-        this.phoneNumber = phoneNumber;
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    // ── Getters ──────────────────────────────────────────────
-    public int          getId()          { return id;          }
-    public PersonName   getName()        { return name;        }
-    public EmailAddress getEmail()       { return email;       }
-    public String       getPhoneNumber() { return phoneNumber; }
-    public String       getDateOfBirth() { return dateOfBirth; }
-
-    // ── Setters (solo campos actualizables) ──────────────────
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void updateName(String firstName, String lastName) {
-        this.name = new PersonName(firstName, lastName);
-    }
-
-    // ── Método de comportamiento ─────────────────────────────
-    public void printSummary() {
-        System.out.println("─────────────────────────────────");
-        System.out.println("  Perfil #" + id);
-        System.out.println("  Nombre : " + name.getFullName());
-        System.out.println("  Email  : " + email.getValue());
-        System.out.println("  Teléf. : " + phoneNumber);
-        System.out.println("  Nac.   : " + dateOfBirth);
-        System.out.println("─────────────────────────────────");
+    // Método propio de la clase: comportamiento del objeto
+    public void mostrarInfo() {
+        System.out.println("Paciente : " + nombre);
+        System.out.println("Edad     : " + edad + " años");
+        System.out.println("Glucosa  : " + nivelGlucosa + " mg/dL");
+        System.out.println("----------------------------");
     }
 }
 
-// ── Clase principal — punto de entrada ───────────────────────
 public class ClasesYObjetos {
 
     public static void main(String[] args) {
 
-        // 1. Crear Value Objects
-        PersonName   nombre = new PersonName("Abigail", "Raymundo");
-        EmailAddress email  = new EmailAddress("abigail@glucosmart.com");
+        // Crear objetos usando el constructor con "new"
+        // Cada objeto es una instancia independiente de la clase Paciente
+        Paciente paciente1 = new Paciente("Ana García", 45, 95.5);
+        Paciente paciente2 = new Paciente("Luis Torres", 60, 180.0);
 
-        // 2. Instanciar el Aggregate Profile
-        Profile perfil = new Profile(
-            1,
-            nombre,
-            email,
-            "+51 987 654 321",
-            "2004-08-15"
-        );
+        // Llamar al método mostrarInfo() de cada objeto
+        System.out.println("=== Registro de Pacientes ===");
+        paciente1.mostrarInfo();
+        paciente2.mostrarInfo();
 
-        // 3. Mostrar el perfil
-        System.out.println("✅ Perfil creado:");
-        perfil.printSummary();
+        // Usar un getter para leer un atributo
+        System.out.println("Nombre del paciente 1: " + paciente1.getNombre());
 
-        // 4. Actualizar datos usando setters
-        perfil.setPhoneNumber("+51 999 111 222");
-        perfil.updateName("Abigail Nadhim", "Raymundo Villarroel");
-
-        System.out.println("✏️  Perfil actualizado:");
-        perfil.printSummary();
-
-        // 5. Acceder a atributos con getters
-        System.out.println("Nombre completo : " + perfil.getName().getFullName());
-        System.out.println("Email           : " + perfil.getEmail());
-
-        // 6. Demostrar validación del Value Object
-        System.out.println("\n⚠️  Probando validación de email:");
-        try {
-            EmailAddress emailInvalido = new EmailAddress("no-es-un-email");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error capturado: " + e.getMessage());
-        }
+        // Usar un setter para modificar un atributo
+        paciente1.setNivelGlucosa(102.3);
+        System.out.println("Glucosa actualizada   : " + paciente1.getNivelGlucosa() + " mg/dL");
     }
 }
