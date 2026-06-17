@@ -95,11 +95,11 @@ Solo necesitas tu navegador web.
 
 ---
 
-### Lección 6: Introducción a POO — Clases y Objetos (12 minutos)
+### Lección 6: Introducción a POO — Clases y Objetos (13 minutos)
 
 - **Descripción**: Descubre el corazón de Java: crea tus propias clases,
   instancia objetos y usa encapsulación con getters y setters.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK6)
+- **Enlace**: [Ver lección](https://youtu.be/OA7ZUZRcAX8)
 - **Conclusiones clave**:
   - Una clase es el molde; un objeto es el resultado: `Paciente p = new Paciente(...)`
   - Los atributos deben ser `private` para proteger los datos (encapsulación).
