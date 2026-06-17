@@ -107,7 +107,7 @@ Solo necesitas tu navegador web.
   - Los getters permiten leer atributos: `paciente1.getNombre()`
   - Los setters permiten modificar atributos: `paciente1.setNivelGlucosa(102.3)`
 - **Practica aquí**:
-  [Abrir editor — Clases y Objetos](https://jdoodle.com/execute-java-online/?LINK6)
+  [Abrir editor — Clases y Objetos](https://www.jdoodle.com/ia/1UaJ)
   👈 **¡Sin registro!**
 
 ---
@@ -142,7 +142,7 @@ Solo necesitas tu navegador web.
 | 3 | Operadores | [JDoodle](https://jdoodle.com/execute-java-online/?LINK3) |
 | 4 | Estructuras de Control | [JDoodle](https://jdoodle.com/execute-java-online/?LINK4) |
 | 5 | Métodos y Scanner | [JDoodle](https://jdoodle.com/execute-java-online/?LINK5) |
-| 6 | Clases y Objetos | [JDoodle](https://jdoodle.com/execute-java-online/?LINK6) |
+| 6 | Clases y Objetos | [JDoodle](https://www.jdoodle.com/ia/1UaJ) |
 | 7 | Proyecto Final | [JDoodle](https://jdoodle.com/execute-java-online/?LINK7) |
 
 ---
