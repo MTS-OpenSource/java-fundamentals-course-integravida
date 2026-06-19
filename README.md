@@ -69,13 +69,13 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Haz que tu programa tome decisiones con `if-else`
   y repita tareas con bucles `for` y `while`.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK4)
+- **Enlace**: [Ver lección](https://youtu.be/8TecPV84xYg)
 - **Conclusiones clave**:
   - `if (edad >= 18) { ... } else { ... }`
   - `for (int i = 0; i < 5; i++) { ... }`
   - `while (condicion) { ... }`
 - **Practica aquí**:
-  [Abrir editor — Estructuras de Control](https://jdoodle.com/execute-java-online/?LINK4)
+  [Abrir editor — Estructuras de Control](https://www.jdoodle.com/online-java-compiler)
   👈 **¡Sin registro!**
 
 ---
@@ -140,7 +140,7 @@ Solo necesitas tu navegador web.
 | 1 | Hola Mundo | [JDoodle](https://jdoodle.com/execute-java-online/?LINK1) |
 | 2 | Variables | [JDoodle](https://jdoodle.com/execute-java-online/?LINK2) |
 | 3 | Operadores | [JDoodle](https://jdoodle.com/execute-java-online/?LINK3) |
-| 4 | Estructuras de Control | [JDoodle](https://jdoodle.com/execute-java-online/?LINK4) |
+| 4 | Estructuras de Control | [JDoodle]([https://www.jdoodle.com/online-java-compiler) |
 | 5 | Métodos y Scanner | [JDoodle](https://jdoodle.com/execute-java-online/?LINK5) |
 | 6 | Clases y Objetos | [JDoodle](https://www.jdoodle.com/ia/1UaJ) |
 | 7 | Proyecto Final | [JDoodle](https://jdoodle.com/execute-java-online/?LINK7) |
