@@ -84,7 +84,7 @@ Solo necesitas tu navegador web.
 
 - **Descripción**: Aprende a crear bloques de código reutilizables con
   métodos y a leer datos que el usuario escribe.
-- **Enlace**: [Ver lección](https://www.youtube.com/watch?v=LINK5)
+- **Enlace**: [Ver lección](https://youtu.be/ND8K5yiXTAs)
 - **Conclusiones clave**:
   - `public static void saludar(String nombre) { ... }`
   - `Scanner teclado = new Scanner(System.in);`
